@@ -30,8 +30,16 @@ body {
   background-color: #313a49;
   padding: 50px;
   border-radius: 15px;
+  margin: 0 30px ;
   text-align: center;
-  max-width: 30%;
+ 
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+ 
+  @media (min-width: 992px) {
+    max-width: 30%;
+  }
   h1 {
     color: #59ae88;
     margin-bottom: 30px;
