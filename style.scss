@@ -66,4 +66,8 @@ body {
     left: 50%;
     transform: translate(-50%, 150%);
   }
+
+  picture img {
+    max-width: 100%;
+  }
 }
