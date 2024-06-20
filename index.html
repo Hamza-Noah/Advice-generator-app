@@ -15,21 +15,22 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="advice">
-      <h1>Advice # <span id="advice-number"></span></h1>
-      <q id="advice-content"></q>
-      <div class="separator">
-        <picture>
-          <source media="(min-width:1399px)" srcset="./images/pattern-divider-desktop.svg">
-          <source media="(min-width:300px)" srcset="./images/pattern-divider-mobile.svg">
-          <img src="./images/pattern-divider-desktop.svg" alt="Divider">
-        </picture>
-        
+  <main>
+    <div class="container">
+      <div class="advice">
+        <h1>Advice # <span id="advice-number" aria-live="Advice number"></span></h1>
+        <blockquote><q id="advice-content" aria-live="Advice content"></q></blockquote>
+        <div class="separator">
+          <picture>
+            <source media="(min-width:1400px)" srcset="./images/pattern-divider-desktop.svg">
+            <img src="./images/pattern-divider-mobile.svg" alt="Divider">
+          </picture>
+        </div>
+        <button id="generate-advice" aria-label="Generate advice"><img src="./images/icon-dice.svg" alt=""></button>
       </div>
-      <button id="generate-advice"><img src="./images/icon-dice.svg" alt=""></button>
     </div>
-  </div>
+  </main>
+
   <script src="./main.js"></script>
 </body>
 

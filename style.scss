@@ -5,9 +5,13 @@
 }
 
 button {
-  border: none;
-  outline: none;
+  border-color: transparent;
   background-color: transparent;
+}
+
+img, picture {
+  display:block;
+  max-width: 100%;
 }
 
 body {
@@ -23,7 +27,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  @media (max-width: 991px) {
+  margin:100px 0;
+    
+  }
 }
 
 .advice {
@@ -31,6 +39,10 @@ body {
   padding: 50px;
   border-radius: 15px;
   margin: 0 30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
  
   @media (max-width: 991px) {
@@ -40,16 +52,17 @@ body {
   @media (min-width: 992px) {
     max-width: 30%;
   }
+
   h1 {
     color: #59ae88;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
-  h1 + q {
+  h1 + blockquote {
     margin-bottom: 30px;
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bolder;
   }
 
@@ -63,11 +76,14 @@ body {
     cursor: pointer;
     position: relative;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 150%);
+    transform:translateY(82px);
+    transition: all ease-in .2s;
+    padding: 20px;
   }
 
-  picture img {
-    max-width: 100%;
+  button:hover{
+    box-shadow: 0 0 20px 5px #53ffa7;
   }
+
+
 }
