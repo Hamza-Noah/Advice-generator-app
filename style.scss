@@ -9,8 +9,9 @@ button {
   background-color: transparent;
 }
 
-img, picture {
-  display:block;
+img,
+picture {
+  display: block;
   max-width: 100%;
 }
 
@@ -29,26 +30,25 @@ body {
   align-items: center;
   min-height: 100vh;
   @media (max-width: 991px) {
-  margin:100px 0;
-    
+    margin: 100px 0;
   }
 }
 
 .advice {
   background-color: #313a49;
-  padding: 50px;
+  padding: 50px 50px 0;
   border-radius: 15px;
-  margin: 0 30px ;
+  margin: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
- 
+
   @media (max-width: 991px) {
     max-width: 100%;
   }
- 
+
   @media (min-width: 992px) {
     max-width: 30%;
   }
@@ -74,16 +74,12 @@ body {
     border-radius: 50%;
     padding: 12px;
     cursor: pointer;
-    position: relative;
-    bottom: 0;
-    transform:translateY(82px);
-    transition: all ease-in .2s;
+    transform: translateY(32px);
+    transition: all ease-in 0.2s;
     padding: 20px;
   }
 
-  button:hover{
+  button:hover {
     box-shadow: 0 0 20px 5px #53ffa7;
   }
-
-
 }

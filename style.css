@@ -9,7 +9,8 @@ button {
   background-color: transparent;
 }
 
-img, picture {
+img,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -37,7 +38,7 @@ body {
 
 .advice {
   background-color: #313a49;
-  padding: 50px;
+  padding: 50px 50px 0;
   border-radius: 15px;
   margin: 0 30px;
   display: flex;
@@ -75,9 +76,7 @@ body {
   border-radius: 50%;
   padding: 12px;
   cursor: pointer;
-  position: relative;
-  bottom: 0;
-  transform: translateY(82px);
+  transform: translateY(32px);
   transition: all ease-in 0.2s;
   padding: 20px;
 }
